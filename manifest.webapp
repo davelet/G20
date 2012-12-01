@@ -1,0 +1,14 @@
+{
+  "name": "G20 Quiz",
+  "description": "G20 Quiz game",
+  "launch_path": "/quiz.html",
+  "icons": {
+    "128": "/icon.png"
+  },
+  "developer": {
+    "name": "Davelet",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "zh-CN"
+}
+

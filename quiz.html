@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>QUiz</title>
+		<style>
+			.thing {
+				position: absolute;
+				left: 0;
+				top: 0;
+				border: 2px;
+				border-style: double;
+				background-color: white;
+				margin: 5px;
+				padding: 5px;
+			}
+			div:active {
+				background-color: green;
+			}
+			form {
+				background-color: #bbb;
+			}
+		</style>
+		<script src="js.js"></script>
+	</head>
+	<body onload="init();">
+		<h1>G20 countries and their capitals.</h1>
+		<br />
+		Click on country or capital and then click on conrresponding capital or country.
+		<p>
+			Reload for new game.
+			<form name="f">
+				Action:
+				<input name="out" type="text" value="RIGHT or WRONG" readonly="true"/>
+				Score:
+				<input name="score" type="text" value="0" readonly="true" />
+				<input id="c01" type="number" max="20" min="1" value="4" onchange="reput();"/>
+				<button  onclick="reset();">
+					重新来
+				</button>
+			</form>
+		</p>
+	</body>
+</html>
